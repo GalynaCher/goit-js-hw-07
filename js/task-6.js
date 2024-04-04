@@ -20,7 +20,7 @@ function createBoxes(amount) {
         
         blockSize += 10;    // кожен наступний квадрат на 10px вищий і ширший від попереднього
       }      
-      return boxesMarkup;
+  return boxesMarkup;
 };
 
 

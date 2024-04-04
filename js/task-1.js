@@ -2,21 +2,21 @@
 
 'use strict'; // Strict mode code
 
-const CategoriesArr = document.querySelectorAll(".item");       // Кількість категорій, їх назва та кількість                                                              
+const categoriesArr = document.querySelectorAll(".item");       // Кількість категорій, їх назва та кількість                                                              
                                                                 // елементів отримані за допомогою властивостей                                                              
-const CategoriesNumber = CategoriesArr.length;                  // і методів DOM - елементів
+const categoriesNumber = categoriesArr.length;                  // і методів DOM - елементів
 
-console.log(`Number of categories: ${CategoriesNumber}`);
+console.log(`Number of categories: ${categoriesNumber}`);
 
 
 // Дані за кожною категорією були отримані й виведені в консоль у тілі методу forEach()
-CategoriesArr.forEach((category) => {
+categoriesArr.forEach((category) => {
 
-    const CategoryTitle = category.querySelector("h2").textContent;         
-    console.log(`Category: ${CategoryTitle}`);
+    const categoryTitle = category.querySelector("h2").textContent;         
+    console.log(`Category: ${categoryTitle}`);
 
-    const ElementsNumber = category.querySelectorAll(".item ul li").length;
-    console.log(`Elements: ${ElementsNumber}`);
+    const elementsNumber = category.querySelectorAll("ul li").length;
+    console.log(`Elements: ${elementsNumber}`);
 
 });
 

@@ -21,7 +21,7 @@ gallery.style.display = "inline-flex";
 
 const markup = images
   .map((image) => `<li class="gallery-item" style="width: 360px; height: 300px; list-style-type: none; margin-right: 24px;">
-                    <img style="width: 100%; height: 100%; object-fit: cover;" src = ${image.url} alt = ${image.alt}/></li>`)
+                    <img style="width: 100%; height: 100%; object-fit: cover;" src = ${image.url} alt = "${image.alt}"/></li>`)
   .join("");
 
 gallery.insertAdjacentHTML("afterbegin", markup);  

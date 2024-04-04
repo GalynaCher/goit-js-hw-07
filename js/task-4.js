@@ -18,8 +18,8 @@ loginForm.addEventListener("submit", (ev) => {   // Прослуховуєтьс
     } else {                                    // При сабміті в консоль виводиться об’єкт з двома властивостями, 
                                                 // де ключі — це ім’я інпутів, а значення — відповідні значення 
         const loginValues = {                   // цих інпутів, очищені від пробілів по краях
-            Email: fieldEmailValue,
-            Password: fieldPasswordValue
+            email: fieldEmailValue,
+            password: fieldPasswordValue
         };
         
         console.log(loginValues); 
